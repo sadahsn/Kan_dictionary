@@ -1,0 +1,2 @@
+serviceClass: com.kan.dic.client.service.DictionaryService
+path: 2203DC286C3692E53E6984BE807311E2.gwt.rpc

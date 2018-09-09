@@ -1,0 +1,2 @@
+serviceClass: com.kan.dic.client.GreetingService
+path: 02DF3F4EFEEF22E1B7AFC5F23E5752CC.gwt.rpc

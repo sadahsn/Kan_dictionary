@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+   <servlet>
+    <servlet-name>getLocalSuggest</servlet-name>
+    <servlet-class>com.kan.dic.server.GetLocalSuggestionsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getLocalSuggest</servlet-name>
+    <url-pattern>/dictionary/getLocalSuggestList</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>getLetters</servlet-name>
+    <servlet-class>com.kan.dic.server.GetLettersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getLetters</servlet-name>
+    <url-pattern>/dictionary/getAllLetters</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>getMeaning</servlet-name>
+    <servlet-class>com.kan.dic.server.GetWordMeaningServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getMeaning</servlet-name>
+    <url-pattern>/dictionary/getWordMeaning</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Dictionary.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
